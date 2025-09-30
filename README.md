@@ -3,26 +3,22 @@ This repository contains the source files for the paper titled "Enhancing Newbor
 
 ## Project Overview
 
-This project explores deep learning–based methods for predicting newborn body composition, specifically fat-mass and fat-free mass using ultrasound imaging.
-We implement and evaluate multiple approaches—including UNet segmentation, Grad-CAM explainability, and feature-based techniques like HOG and SIFT—to assess model performance and interpretability.
+This project explores a U-Net Shaped deep learning–based model for predicting newborn body composition, specifically fat-mass and fat-free mass using ultrasound imaging.
+We implement and evaluate multiple approaches in comparsion to UNet segmentation and interpret the results using Grad-CAM explainability. The model's performance is compared against traditional regression models such as HOG and SIFT regression. The metric Mean Absolute Percentage Error or (MAPE) is used to assess the model performance. Our model achieves a MAPE score of less than 10%, proving to be effective in predicting body composition.
 
 ## Repository Structure: 
 ### UNET Model 
-- UNet Model Architecture
-- Cross Validation
-- Pre-processing 
+The UNet Model and corresponding architecture is detailed in this repository. Linear layers are added to the traditional UNet architecture to achieve a regression task. The ultrasound images are processed to be cropped and reshpaed to be of Tensor type. The tensor channels are then passed through the model and trained using a 5-fold cross validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techiques are also detailed in this section. 
 
 ### GradCam 
 - Methods of GradCams
 - results of those
 
 ### HOG & SIFT 
-- code and comparisons
+- Traditional regression tecniques, particularly HOG and SIFT are used to test the model performance in comparison the the UNEt model. MAPE statistics are generated again from these methods and compared to corresponding UNet model part predictions.
 
 ### Table & External Figures 
-- Figure 3
-- Tables
-- Figure generation code file 
+This section gives 
 
 ### Requirements txt 
  
