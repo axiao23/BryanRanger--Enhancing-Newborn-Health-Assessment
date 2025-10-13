@@ -10,7 +10,7 @@ We implement and evaluate multiple approaches in comparsion to UNet segmentation
 ### UNET Model audrey
 The UNet Model and corresponding architecture is detailed in this repository. Linear layers are added to the traditional UNet architecture to achieve a regression task. The ultrasound images are processed to be cropped and reshpaed to be of Tensor type. The tensor channels are then passed through the model and trained using a 5-fold cross validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techiques are also detailed in this section. 
 
-### GradCam julie
+### GradCam
 This folder contains visual interpretability materials supporting the paper's findings on model explainability:
 
 - **`Grad-CAM/code/`**:  
