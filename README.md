@@ -11,9 +11,14 @@ We implement and evaluate multiple approaches in comparsion to UNet segmentation
 The UNet Model and corresponding architecture is detailed in this repository. Linear layers are added to the traditional UNet architecture to achieve a regression task. The ultrasound images are processed to be cropped and reshpaed to be of Tensor type. The tensor channels are then passed through the model and trained using a 5-fold cross validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techiques are also detailed in this section. 
 
 ### GradCam julie
-- Methods of GradCams
-- results of those
+This folder contains visual interpretability materials supporting the paper's findings on model explainability:
 
+- **`Grad-CAM/code/`**:  
+  Includes a Jupyter notebook to recreate Grad-CAM heatmaps that highlight the regions within ultrasound images contributing most to fat mass (FM) and fat-free mass (FFM) predictions. The code applies Grad-CAM at the final layer of the U-Net model across abdomen, bicep, and quadriceps images.
+
+- **`Grad-CAM/figures/`**:  
+  Contains the final Grad-CAM visualization (**Figure 8** in the paper), which illustrates that the model emphasizes muscle tissue over subcutaneous fat, especially in the abdomen. These heatmaps provide insight into which anatomical features most influence the model's predictions.
+  
 ### HOG & SIFT audrey
 - Traditional regression tecniques, particularly HOG and SIFT are used to test the model performance in comparison the the UNEt model. MAPE statistics are generated again from these methods and compared to corresponding UNet model part predictions.
 
