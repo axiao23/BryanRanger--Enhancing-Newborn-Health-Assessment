@@ -41,7 +41,7 @@ Contains the code and outputs used to generate Tables and Figures from the manus
 
 Lists all software dependencies.
 
-### Data
+### Data:
 [UltrasoundData.txt](UltrasoundData.txt)
 
 This study used data from an observational cohort originally conducted at the **University of Minnesota Medical Center**, published in the *Journal of Parenteral and Enteral Nutrition* ([Nagel et al., 2021](https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.1829)).  
