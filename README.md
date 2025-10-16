@@ -1,5 +1,5 @@
-# Enhancing-Newborn-Health-Assessment- A Deep Learning U-Net Model for Newborn Body Composition Prediction
-This repository contains the source files for the paper titled "Enhancing Newborn Health Assessment: Ultrasound-based Body Composition Prediction Using Deep Learning Techniques" published in the Ultrasound for Medicine &amp; Biology November 2025 edition. Read the full paper [here](https://www.sciencedirect.com/science/article/pii/S0301562925003813?dgcid=coauthor). For further inquiries, please contact rangerlabbc@gmail.com.
+# Enhancing-Newborn-Health-Assessment: A Deep Learning U-Net Model for Newborn Body Composition Prediction
+This repository contains the source files for the paper titled "Enhancing Newborn Health Assessment: Ultrasound-based Body Composition Prediction Using Deep Learning Techniques" published in *Ultrasound in Medicine &amp; Biology* (November 2025 edition). Read the full paper [here](https://www.sciencedirect.com/science/article/pii/S0301562925003813?dgcid=coauthor). For further inquiries, please contact rangerlabbc@gmail.com.
 
 ## Project Overview
 
@@ -13,7 +13,7 @@ Performance is assessed using the Mean Absolute Percentage Error (MAPE), with th
 ### U-NET Model: 
 [UNet/](UNet/)
 
-The U-Net Model and corresponding architecture are detailed in this repository. Linear layers are added to the traditional U-Net architecture to achieve a regression task. The ultrasound images are processed to be cropped and reshaped to be of Tensor type. The tensor channels are then passed through the model and trained using a 5-fold cross-validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techniques are also detailed in this section. 
+The U-Net Model and corresponding architecture are detailed in this repository. Linear layers are added to the traditional U-Net architecture to achieve a regression task. Ultrasound images are cropped, reshaped, and converted to tensor format. The tensor channels are then passed through the model and trained using a 5-fold cross-validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techniques are also detailed in this section. 
 
 ### Grad-CAM: 
 [Grad-CAM/](Grad-CAM/)
@@ -29,12 +29,12 @@ This folder contains visual interpretability materials supporting the paper's fi
 ### HOG & SIFT: 
 [HOG and SIFT Regression/](HOG%20and%20SIFT%20Regression/)
 
-Implements baseline feature-based models for performance comparison. Traditional regression techniques, particularly HOG and SIFT, are used to test the model performance in comparison to the U-Net model. MAPE statistics are generated again from these methods and compared to the corresponding U-Net model part predictions.
+Implements baseline feature-based regression models for performance comparison. HOG and SIFT features are extracted from ultrasound images and used to predict body composition. MAPE metrics from these traditional models are compared directly with the U-Net predictions.
 
 ### Table & External Figures: 
 [UMB_Tables&Figures/](UMB_Tables%26Figures/)
 
-Contains the code and outputs used to generate Tables and Figures from the manuscript, including data summaries, performance comparisons, and visualization plots supporting the main results.
+Contains the code and outputs used to generate Tables and Figures from the manuscript, including model performance summaries and Bland–Altman analyses supporting the main results.
 
 ### Requirements: 
 [requirements.txt](requirements.txt)
