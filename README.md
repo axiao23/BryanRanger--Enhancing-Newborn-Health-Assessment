@@ -15,6 +15,9 @@ Performance is assessed using the Mean Absolute Percentage Error (MAPE), with th
 
 The U-Net Model and corresponding architecture are detailed in this repository. Linear layers are added to the traditional U-Net architecture to achieve a regression task. Downsampling and upsampling layers are defined in the model. Ultrasound images are cropped, reshaped, and converted to tensor format. The tensor channels are then passed through the model and trained using a 5-fold cross-validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techniques are also detailed in this section. 
 
+- **`UNet/code/`**:
+  Includes a jupyter notebook which defines the architecture, methodology and the training of the UNet model propossed in our paper. The notebook also includes directory pathways to the dataset and ultrasound images utilized in the training of the model. The statistics used in Figure 2 and 3 in the paper are also generated and computed in the model.
+- ** 'UNet/figures/'**  
 
 ### Grad-CAM: 
 [Grad-CAM/](Grad-CAM/)
@@ -30,7 +33,7 @@ This folder contains visual interpretability materials supporting the paper's fi
 ### HOG & SIFT: 
 [HOG and SIFT Regression/](HOG%20and%20SIFT%20Regression/)
 
-Implements baseline feature-based regression models for performance comparison. HOG and SIFT features are extracted from ultrasound images and used to predict body composition. MAPE metrics from these traditional models are compared directly with the U-Net predictions.
+Implements baseline feature-based regression models for performance comparison. HOG and SIFT features are extracted from ultrasound images and used to predict body composition. MAPE metrics from these traditional models are compared directly with the U-Net predictions and are detailed in Figuure 3. 
 
 ### Table & External Figures: 
 [UMB_Tables&Figures/](UMB_Tables%26Figures/)
