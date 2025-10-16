@@ -10,10 +10,12 @@ We implement and evaluate multiple deep learning and feature-based approaches, b
 Performance is assessed using the Mean Absolute Percentage Error (MAPE), with the proposed U-Net achieving a MAPE below 10%, demonstrating strong accuracy and reliability for ultrasound-based body composition prediction.
 
 ## Repository Structure: 
-### U-NET Model: [UNet/](UNet/)
+### U-NET Model: 
+[UNet/](UNet/)
 The U-Net Model and corresponding architecture are detailed in this repository. Linear layers are added to the traditional U-Net architecture to achieve a regression task. The ultrasound images are processed to be cropped and reshaped to be of Tensor type. The tensor channels are then passed through the model and trained using a 5-fold cross-validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techniques are also detailed in this section. 
 
-### Grad-CAM: [Grad-CAM/](Grad-CAM/)
+### Grad-CAM: 
+[Grad-CAM/](Grad-CAM/)
 This folder contains visual interpretability materials supporting the paper's findings on model explainability:
 
 - **`Grad-CAM/code/`**:  
@@ -22,17 +24,20 @@ This folder contains visual interpretability materials supporting the paper's fi
 - **`Grad-CAM/figures/`**:  
   Contains the final Grad-CAM visualization (**Figure 8** in the paper), which illustrates that the model emphasizes muscle tissue over subcutaneous fat, especially in the abdomen. These heatmaps provide insight into which anatomical features most influence the model's predictions.
   
-### HOG & SIFT: [HOG and SIFT Regression/](HOG%20and%20SIFT%20Regression/)
+### HOG & SIFT: 
+[HOG and SIFT Regression/](HOG%20and%20SIFT%20Regression/)
 Implements baseline feature-based models for performance comparison. Traditional regression techniques, particularly HOG and SIFT, are used to test the model performance in comparison to the U-Net model. MAPE statistics are generated again from these methods and compared to the corresponding U-Net model part predictions.
 
-### Table & External Figures: [UMB_Tables&Figures/](UMB_Tables%26Figures/)
+### Table & External Figures: 
+[UMB_Tables&Figures/](UMB_Tables%26Figures/)
 Contains the code and outputs used to generate Tables and Figures from the manuscript, including data summaries, performance comparisons, and visualization plots supporting the main results.
 
-### Requirements: [requirements.txt](requirements.txt)
+### Requirements: 
+[requirements.txt](requirements.txt)
 Lists all software dependencies.
 
 ### Data
-
+[UltrasoundData.txt](UltrasoundData.txt)
 This study used data from an observational cohort originally conducted at the **University of Minnesota Medical Center**, published in the *Journal of Parenteral and Enteral Nutrition* ([Nagel et al., 2021](https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.1829)).  
 
 A secondary analysis was performed using ultrasound images and clinical data from that cohort, which enrolled 68 preterm infants born between 25–34 weeks gestation who were clinically stable (not requiring respiratory support or intravenous fluids). Ultrasound imaging of the arm, leg, and abdomen was performed alongside body composition measurements obtained using air displacement plethysmography (ADP). The post-menstrual age (PMA) at the time of measurement ranged from 32.6 to 38.7 weeks. For this secondary analysis, 65 infants with complete ultrasound and ADP data were included.  
