@@ -1,7 +1,7 @@
 # Enhancing-Newborn-Health-Assessment: A Deep Learning U-Net Model for Newborn Body Composition Prediction
 This repository contains the source files for the paper titled "Enhancing Newborn Health Assessment: Ultrasound-based Body Composition Prediction Using Deep Learning Techniques" published in *Ultrasound in Medicine &amp; Biology* (November 2025 edition). Read the full paper [here](https://www.sciencedirect.com/science/article/pii/S0301562925003813?dgcid=coauthor). For further inquiries, please contact rangerlabbc@gmail.com.
 
-## Project Overview
+## Project Overview 
 
 This project presents a modified U-Net deep learning model for predicting newborn body composition, specifically fat mass (FM) and fat-free mass (FFM), from ultrasound images.
 
@@ -13,7 +13,8 @@ Performance is assessed using the Mean Absolute Percentage Error (MAPE), with th
 ### U-NET Model: 
 [UNet/](UNet/)
 
-The U-Net Model and corresponding architecture are detailed in this repository. Linear layers are added to the traditional U-Net architecture to achieve a regression task. Ultrasound images are cropped, reshaped, and converted to tensor format. The tensor channels are then passed through the model and trained using a 5-fold cross-validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techniques are also detailed in this section. 
+The U-Net Model and corresponding architecture are detailed in this repository. Linear layers are added to the traditional U-Net architecture to achieve a regression task. Downsampling and upsampling layers are defined in the model. Ultrasound images are cropped, reshaped, and converted to tensor format. The tensor channels are then passed through the model and trained using a 5-fold cross-validation technique. An independent test set is then used to create predictions. The ground truth and predictions are compared to generate a final MAPE score. Various augmentation and preprocessing techniques are also detailed in this section. 
+
 
 ### Grad-CAM: 
 [Grad-CAM/](Grad-CAM/)
