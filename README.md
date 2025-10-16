@@ -44,15 +44,11 @@ Lists all software dependencies.
 ### Data:
 [UltrasoundData.txt](UltrasoundData.txt)
 
+All details about the dataset, imaging protocol, and preprocessing steps are provided in **UltrasoundData.txt**. 
+
 This study used data from an observational cohort originally conducted at the **University of Minnesota Medical Center**, published in the *Journal of Parenteral and Enteral Nutrition* ([Nagel et al., 2021](https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/jpen.1829)).  
 
-A secondary analysis was performed using ultrasound images and clinical data from that cohort, which enrolled 68 preterm infants born between 25–34 weeks gestation who were clinically stable (not requiring respiratory support or intravenous fluids). Ultrasound imaging of the arm, leg, and abdomen was performed alongside body composition measurements obtained using air displacement plethysmography (ADP). The post-menstrual age (PMA) at the time of measurement ranged from 32.6 to 38.7 weeks. For this secondary analysis, 65 infants with complete ultrasound and ADP data were included.  
-
-A total of 721 B-mode ultrasound images were collected across three anatomical sites: the biceps (brachii & brachialis), abdomen (rectus abdominis), and quadriceps (rectus femoris & vastus intermedius) — using a NextGen LOGIQ e R7 ultrasound system (GE Medical Systems, Chicago, IL, USA). At least three images were acquired per region.  
-
-All DICOM images were converted to JPEG format and underwent rigorous quality control, excluding scans with excessive acoustic shadowing, low tissue contrast, truncated views, or probe-induced compression. Each exclusion was reviewed independently by at least two researchers.   
-
-Because the dataset contains identifiable neonatal ultrasound images, it remains **private and not publicly available**. Researchers interested in access should contact the study team via institutional collaboration.  
+Because the dataset contains identifiable neonatal ultrasound images, it remains **private and not publicly available**. Researchers interested in access should contact the study team via institutional collaboration.
 
 ## Citation
 
