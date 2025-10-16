@@ -44,9 +44,11 @@ All DICOM images were converted to JPEG format and underwent rigorous quality co
 Because the dataset contains identifiable neonatal ultrasound images, it remains **private and not publicly available**. Researchers interested in access should contact the study team via institutional collaboration.  
 
 ## Citation
+
 If you use this repository or reference the study, please cite:
 
-> He, K., Hohenberg, J., Li, Y., Xiao, A., Cho, H., Nagel, E., Ramel, S., Bell, K.A., Wei, D., Park, J., & Ranger, B.J. (2025).  
+> **Keshi He, Julia Hohenberg, Yi Li, Audrey Xiao, Hayoung Cho, Emily Nagel, Sara Ramel, Katherine A. Bell, Donglai Wei, Jinhee Park, Bryan J. Ranger.**  
 > *Enhancing Newborn Health Assessment: Ultrasound-based Body Composition Prediction Using Deep Learning Techniques.*  
-> *Ultrasound in Medicine & Biology.* [https://www.sciencedirect.com/science/article/pii/S0301562925003813?dgcid=coauthor](https://www.sciencedirect.com/science/article/pii/S0301562925003813?dgcid=coauthor)
-
+> *Ultrasound in Medicine & Biology*, 2025. ISSN 0301-5629.  
+> [https://doi.org/10.1016/j.ultrasmedbio.2025.09.016](https://doi.org/10.1016/j.ultrasmedbio.2025.09.016)  
+> [Available online at ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0301562925003813)
